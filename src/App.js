@@ -5,10 +5,14 @@ import './App.css'
 class App extends Component {
   render() {
     return (
-      <h1 className='txt-color'>
-      Hello World
-      </h1>
+      <FRapper />
     );
+  }
+}
+
+class FRapper extends Component {
+  render() {
+    return <div className="txt-color">Hello, World!</div>;
   }
 }
 
