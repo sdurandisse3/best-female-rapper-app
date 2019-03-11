@@ -1,4 +1,11 @@
 
-.txt-color {
-    color: pink
+fr-style {
+    color: black;
+    font-size: 30px;
+}
+
+div {
+    display: block;
+    margin: auto;
+    width: 100%;
 }

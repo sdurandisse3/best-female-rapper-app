@@ -5,14 +5,14 @@ import './App.css'
 class App extends Component {
   render() {
     return (
-      <FRapper />
+      <FRapper name="Cardi B"/>
     );
   }
 }
 
 class FRapper extends Component {
   render() {
-    return <div className="txt-color">Hello, World!</div>;
+    return <div className="fr-style">{this.props.name}</div>;
   }
 }
 
