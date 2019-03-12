@@ -1,13 +1,26 @@
 import React, { Component } from 'react';
 import './App.css'
+// import './List'
 
+const list = [
+  {
+    name: 'Cardi B'
+  },
+  {
+    name: 'Nicki Minaj'
+  },
+  {
+    name: 'Remy Ma'
+  },
+];
 
 class App extends Component {
   render() {
+    // const rapper = list;
     return (
-      <FRapper name="Cardi B"/>
-    );
-  }
+      list.map(rapper => 
+      <FRapper name={rapper.name} />)
+  )}
 }
 
 class FRapper extends Component {
