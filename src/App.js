@@ -4,22 +4,24 @@ import './App.css'
 
 const list = [
   {
+    id: 1,
     name: 'Cardi B'
   },
   {
+    id: 2,
     name: 'Nicki Minaj'
   },
   {
+    id: 3,
     name: 'Remy Ma'
   },
 ];
 
 class App extends Component {
   render() {
-    // const rapper = list;
     return (
       list.map(rapper => 
-      <FRapper name={rapper.name} />)
+      <FRapper key={rapper.id}name={rapper.name} />)
   )}
 }
 
