@@ -1,6 +1,6 @@
 
-fr-style {
-    color: black;
+.fr-style {
+    color:pink;
     font-size: 30px;
 }
 
@@ -8,6 +8,5 @@ div {
     display: block;
     margin: auto;
     width: 100%;
-    color: red;
     text-align: center;
 }
