@@ -1,23 +1,29 @@
 import React, { Component } from 'react';
 import './App.css'
-// import './List'
 
 const list = [
   {
     id: 1,
-    name: 'Cardi B'
+    name: 'Cardi B',
+    votes: 0
   },
   {
     id: 2,
-    name: 'Nicki Minaj'
+    name: 'Nicki Minaj',
+    votes: 0
   },
   {
     id: 3,
-    name: 'Remy Ma'
+    name: 'Remy Ma',
+    votes: 0
   },
 ];
 
 class App extends Component {
+// handleOnClick = (e) => {
+// console.log('button clicked')
+// }
+
   render() {
     return (
       list.map(rapper => 
@@ -26,8 +32,13 @@ class App extends Component {
 }
 
 class FRapper extends Component {
+
+   handleClick = (e) => {
+     console.log('button clicked')
+   }
+
   render() {
-    return <div className="fr-style">{this.props.name}</div>;
+    return <div className="fr-style">{this.props.name} <button onClick={this.handleClick} >+</button></div>;
   }
 }
 
