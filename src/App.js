@@ -25,7 +25,7 @@ class App extends Component {
   render() {
     return (
       list.map(rapper => 
-      <FRapper key={rapper.id} name={rapper.name} onVote={this.handleEvent}/>)
+      <FRapper key={rapper.id} id={rapper.id} name={rapper.name} onVote={this.handleEvent} votes={rapper.votes}/>)
   )}
 }
 
