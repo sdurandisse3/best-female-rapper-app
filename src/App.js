@@ -37,7 +37,7 @@ this.props.onVote(this.props.name);
  }
 
   render() {
-    return <div className="fr-style">{this.props.name} <button onClick={this.handleClick} >+</button></div>;
+    return <div className="fr-style">{this.props.name} <button onClick={this.handleClick} >+</button> {this.props.votes} </div>;
   }
 }
 
