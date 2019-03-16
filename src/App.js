@@ -20,6 +20,16 @@ const list = [
 ];
 
 class App extends Component {
+
+  state = {
+    rappers: [],
+  };
+
+  componentDidMount() {
+    this.setState({ rappers: list });
+  }
+
+
   handleEvent = (e) => console.log('button clicked '+e);
 
   render() {
