@@ -20,9 +20,7 @@ const list = [
 ];
 
 class App extends Component {
-// handleOnClick = (e) => {
-// console.log('button clicked')
-// }
+
 
   render() {
     return (
@@ -33,9 +31,9 @@ class App extends Component {
 
 class FRapper extends Component {
 
-   handleClick = (e) => {
-     console.log('button clicked')
-   }
+ handleClick = (e) => {
+ console.log('button clicked '+ e.target)
+ }
 
   render() {
     return <div className="fr-style">{this.props.name} <button onClick={this.handleClick} >+</button></div>;
