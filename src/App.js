@@ -20,19 +20,20 @@ const list = [
 ];
 
 class App extends Component {
-
+  handleEvent = (e) => console.log('button clicked '+e);
 
   render() {
     return (
       list.map(rapper => 
-      <FRapper key={rapper.id}name={rapper.name} />)
+      <FRapper key={rapper.id} name={rapper.name} onVote={this.handleEvent}/>)
   )}
 }
 
 class FRapper extends Component {
 
- handleClick = (e) => {
- console.log('button clicked '+ e.target)
+ handleClick = () => {
+//  console.log('button clicked '+ e.target)
+this.props.onVote(this.props.name);
  }
 
   render() {
