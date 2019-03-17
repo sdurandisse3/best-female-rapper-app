@@ -43,7 +43,7 @@ class FRapper extends Component {
 
  handleClick = () => {
 //  console.log('button clicked '+ e.target)
-this.props.onVote(this.props.name);
+this.props.onVote(this.props.id);
  }
 
   render() {
